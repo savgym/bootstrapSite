@@ -2,16 +2,32 @@
   font-size: 16px;
   --blue: #1e90ff;
   --white: #ffffff;
+  --purple: #9933cc;
 }
 
-.fab {
-  font-size: 24px;
-}
 .footer :last-child {
   text-align: center;
   background-color: var(--blue);
   color: var(--white);
 }
+/* header navbar */
+.fab {
+  font-size: 24px;
+}
 .header {
   text-align: center;
 }
+.navbar-light {
+  background-color: var(--purple);
+}
+.navbar-light a {
+  color: var(--white);
+}
+.navbar-light a:hover {
+  color: black;
+}
+
+.navbar-light .navbar-toggle .icon-bar {
+  background-color: var(--white);
+}
+/* end header navbar */
