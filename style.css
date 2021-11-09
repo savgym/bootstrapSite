@@ -16,6 +16,10 @@
   background-color: var(--blue);
   color: var(--white);
 }
+.footer-div {
+  margin: auto;
+}
+
 .social_footer {
   display: none;
 }
@@ -49,5 +53,10 @@
 @media only screen and (max-width: 768px) {
   .social {
     display: none;
+  }
+
+  .social_footer {
+    display: inline;
+    list-style: none;
   }
 }
