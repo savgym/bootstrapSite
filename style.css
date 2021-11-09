@@ -3,12 +3,26 @@
   --blue: #1e90ff;
   --white: #ffffff;
   --purple: #9933cc;
+  --black: #000000;
 }
-
-.footer :last-child {
+/* footer */
+.footer a {
   text-align: center;
   background-color: var(--blue);
   color: var(--white);
+}
+.footer {
+  text-align: center;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.social_footer {
+  display: none;
+}
+/* end footer */
+
+.active {
+  background-color: var(--blue);
 }
 /* header navbar */
 .fab {
@@ -24,10 +38,16 @@
   color: var(--white);
 }
 .navbar-light a:hover {
-  color: black;
+  color: var(--black);
 }
 
 .navbar-light .navbar-toggle .icon-bar {
   background-color: var(--white);
 }
 /* end header navbar */
+/* 769px collapse */
+@media only screen and (max-width: 768px) {
+  .social {
+    display: none;
+  }
+}
