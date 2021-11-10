@@ -1,10 +1,12 @@
 * {
   font-size: 16px;
+  box-sizing: border-box;
   --blue: #1e90ff;
   --white: #ffffff;
   --purple: #9933cc;
   --black: #000000;
 }
+
 /* footer */
 .footer a {
   text-align: center;
@@ -20,11 +22,20 @@
   margin: auto;
 }
 
-.social_footer {
+.social_footer li {
   display: none;
 }
 /* end footer */
-
+.dropdown-menu {
+  background-color: var(--purple);
+}
+.dropdown-menu a {
+  color: var(--white) !important;
+  text-align: center;
+}
+.dropdown-menu a:hover {
+  color: var(--black) !important;
+}
 .active {
   background-color: var(--blue);
 }
@@ -55,8 +66,9 @@
     display: none;
   }
 
-  .social_footer {
+  .social_footer li {
     display: inline;
     list-style: none;
+    padding: 10px;
   }
 }
