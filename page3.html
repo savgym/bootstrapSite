@@ -17,109 +17,173 @@
     <link rel="stylesheet" href="style.css" />
     <title>ergasia</title>
   </head>
+  <body>
+    <div class="container">
+      <!-- head -->
+      <div class="row">
+        <div class="col-md-12 header">
+          <!-- nav -->
+          <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#Navbar1"
+                  style="color: black"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html">My Site</a>
+              </div>
+              <div class="collapse navbar-collapse" id="Navbar1">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Page 1</a></li>
 
-  <div class="container">
-    <!-- head -->
-    <div class="row">
-      <div class="col-md-12 header">
-        <!-- nav -->
-        <nav class="navbar navbar-light">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#Navbar1"
-                style="color: black"
-              >
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/index.html">My Site</a>
+                  <li class="dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="page1.html"
+                      >Page 2 <span class="caret"></span
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/index.html">Page 1</a></li>
+                      <li>
+                        <a href="/page2.html">Page 2</a>
+                      </li>
+                      <li><a href="/page3.html">Page 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="active"><a href="/page3.html">Page 3</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right social">
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitter.com/" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="collapse navbar-collapse" id="Navbar1">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Page 1</a></li>
+          </nav>
+          <!-- nav -->
 
-                <li class="dropdown">
-                  <a
-                    class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    href="page1.html"
-                    >Page 2 <span class="caret"></span
-                  ></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/index.html">Page 1</a></li>
-                    <li>
-                      <a href="/page2.html">Page 2</a>
-                    </li>
-                    <li><a href="/page3.html">Page 3</a></li>
-                  </ul>
-                </li>
+          <h1>Page3</h1>
+        </div>
+      </div>
+      <!-- end head -->
+      <!-- body -->
+      <h2>Nested Media Objects</h2>
+      <p>
+        Media objects can also be nested (a media object inside a media object):
+      </p>
+      <br />
+      <div class="media">
+        <div class="media-left">
+          <img
+            src="images/img_avatar1.png"
+            class="media-object"
+            style="width: 45px"
+          />
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">
+            John Doe <small><i>Posted on February 19, 2016</i></small>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
 
-                <li class="active"><a href="/page3.html">Page 3</a></li>
-              </ul>
+          <!-- Nested media object -->
+          <div class="media">
+            <div class="media-left">
+              <img
+                src="images/img_avatar1.png"
+                class="media-object"
+                style="width: 45px"
+              />
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">
+                John Doe <small><i>Posted on February 19, 2016</i></small>
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
 
-              <ul class="nav navbar-nav navbar-right social">
-                <li>
-                  <a href="https://www.facebook.com/" target="_blank"
-                    ><i class="fab fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.twitter.com/" target="_blank"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-              </ul>
+              <!-- Nested media object -->
+              <div class="media">
+                <div class="media-left">
+                  <img
+                    src="images/img_avatar1.png"
+                    class="media-object"
+                    style="width: 45px"
+                  />
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    John Doe <small><i>Posted on February 19, 2016</i></small>
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
-        <!-- nav -->
+        </div>
+      </div>
+      <!-- body end -->
+      <!-- footer -->
+      <div class="row footer-div">
+        <div class="col-md-12 footer">
+          <p>
+            Savvas Gymnopoulos &copy;<br />
+            <a href="mailto:sav_tph@hotmail.com">sav_tph@hotmail.com</a>
+          </p>
+          <!-- social hidden -->
+          <ul class="social_footer">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer end -->
+    </div>
 
-        <h1>Page3</h1>
-      </div>
-    </div>
-    <!-- end head -->
-    <!-- body -->
-    <!-- body end -->
-    <!-- footer -->
-    <div class="row footer-div">
-      <div class="col-md-12 footer">
-        <p>
-          Savvas Gymnopoulos &copy;<br />
-          <a href="mailto:sav_tph@hotmail.com">sav_tph@hotmail.com</a>
-        </p>
-        <!-- social hidden -->
-        <ul class="social_footer">
-          <li>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank">
-              <i class="fab fa-instagram"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- footer end -->
-  </div>
-  <body>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
