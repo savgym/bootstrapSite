@@ -63,11 +63,31 @@
 
 /* end header navbar */
 /* Media */
-.media1 {
-  height: 200px;
-  outline: var(--white) inset 10px;
-  border-style: outset;
-  margin-bottom: 30px;
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: var(--blue);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.card-body {
+  padding: 0 16px;
 }
 
 /* end Media */
