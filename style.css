@@ -46,6 +46,7 @@
 .header {
   text-align: center;
 }
+
 .navbar-light {
   background-color: var(--purple);
 }
@@ -59,7 +60,17 @@
 .navbar-light .navbar-toggle .icon-bar {
   background-color: var(--white);
 }
+
 /* end header navbar */
+/* Media */
+.media1 {
+  height: 200px;
+  outline: var(--white) inset 10px;
+  border-style: outset;
+  margin-bottom: 30px;
+}
+
+/* end Media */
 /* 769px collapse */
 @media only screen and (max-width: 768px) {
   .social {
